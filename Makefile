@@ -20,6 +20,7 @@ clean:
 
 clean-all: clean
 	rm -r $(PACKETDIR)
+	rm $(TARGETDEB)
 
 test:
 	echo "${VERSION}"
@@ -35,7 +36,7 @@ control: $(TARGET)
 	echo "Architecture: all" >> $(CONTROL);\
 	echo "Version: ${VERSION}" >> $(CONTROL);\
 	echo "Depends:" >> $(CONTROL);\
-	echo "Description: Calculadora que suma" >> $(CONTROL);\
+	echo "Description: Calculadora que suma mucho"  >> $(CONTROL);\
 	echo " Paquete con un ejecutable de calculadora" >> $(CONTROL);\
 	)
 
