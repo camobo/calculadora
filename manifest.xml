@@ -1,0 +1,16 @@
+   <?xml version="1.0" encoding="UTF-8"?>
+    <manifest>
+      <remote  name="aosp"
+               fetch="https://android.googlesource.com/"/>
+      <remote  name="calculadora"
+               fetch="https://github.com/camobo/"/>
+
+      <default revision="master"
+               remote="calculadora" />
+
+      <project path="calculadora" name="calculadora" />
+      <!--<project path="bionic" name="platform/bionic" groups="pdk" />
+      <project path="dalvik" name="platform_dalvik" remote="udinic"/>
+      <project path="frameworks/base" name="platform_frameworks_base" remote="udinic" revision="statusbar_fixes"/>
+      <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />-->
+    </manifest>
