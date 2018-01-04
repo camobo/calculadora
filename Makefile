@@ -7,6 +7,7 @@ DEBIAN=$(PACKETDIR)/DEBIAN
 CONTROL=$(DEBIAN)/control
 VERSION=1.0.0
 TARGETDEB=$(TARGET)-$(VERSION).deb
+DESTDIR=usr/bin
 
 
 $(TARGET):$(OBJETOS)
@@ -47,6 +48,8 @@ install: $(TARGETDEB)
 	dpkg -i $(TARGETDEB)
 
 installYocto: $(TARGET)
+	mkdir -p $(DESTDIR)
+	cp $(TARGET) $(DESTDIR)
 
 unninstall: install
 
