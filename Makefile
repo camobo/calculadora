@@ -46,5 +46,7 @@ deb: control
 install: $(TARGETDEB)
 	dpkg -i $(TARGETDEB)
 
+installYocto: $(TARGET)
+
 unninstall: install
 
