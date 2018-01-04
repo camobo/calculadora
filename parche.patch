@@ -1,0 +1,13 @@
+--- mainmalo.c	2018-01-04 18:47:54.599538533 +0100
++++ main.c	2018-01-04 17:59:26.467526986 +0100
+@@ -39,6 +39,10 @@ int main(void) {
+ 			printf("El resultado de la operación es: %d\n", resultado);
+ 			break;
+ 		case 4:
++			if ( num2 == 0 ) {
++				printf("La división por 0 es una indeterminación\n");
++				return 1;
++			}
+ 
+ 			resultado = division(num1, num2);
+ 			printf("El resultado de la operación es: %d\n", resultado);
