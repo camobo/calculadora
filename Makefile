@@ -48,7 +48,7 @@ install: $(TARGETDEB)
 	dpkg -i $(TARGETDEB)
 
 installYocto: $(TARGET)
-	mkdir -p $(DESTDIR)
+	install -d $(DESTDIR)
 	cp $(TARGET) $(DESTDIR)
 
 unninstall: install
