@@ -1,5 +1,5 @@
---- mainmalo.c	2018-01-04 18:47:54.599538533 +0100
-+++ main.c	2018-01-04 17:59:26.467526986 +0100
+--- main.c	2018-01-04 18:59:36.231541319 +0100
++++ mainbueno.c	2018-01-04 18:59:36.231541319 +0100
 @@ -39,6 +39,10 @@ int main(void) {
  			printf("El resultado de la operación es: %d\n", resultado);
  			break;
