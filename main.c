@@ -5,7 +5,7 @@
 int main(void) {
 	int num1, num2, opcion, resultado;
 	printf("*************************************\n");
-	printf("*CALCULADORA***modifi*segunda prueba*\n");
+	printf("*CALCULADORA**modificada ************\n");
 	printf("*************************************\n");
 
 	printf("Elige la operación que quieres hacer:\n");
@@ -39,10 +39,6 @@ int main(void) {
 			printf("El resultado de la operación es: %d\n", resultado);
 			break;
 		case 4:
-			if ( num2 == 0 ) {
-				printf("La división por 0 es una indeterminación\n");
-				return 1;
-			}
 
 			resultado = division(num1, num2);
 			printf("El resultado de la operación es: %d\n", resultado);
