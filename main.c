@@ -5,7 +5,7 @@
 int main(void) {
 	int num1, num2, opcion, resultado;
 	printf("*************************************\n");
-	printf("*CALCULADORA*************************\n");
+	printf("*CALCULADORA***modificada en testing**\n");
 	printf("*************************************\n");
 
 	printf("Elige la operación que quieres hacer:\n");
